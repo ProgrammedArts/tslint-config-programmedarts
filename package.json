@@ -1,0 +1,26 @@
+{
+  "name": "tslint-config-programmedarts",
+  "version": "0.1.2",
+  "description": "TSLint config for Programmed Arts TypeScript projects",
+  "main": "tslint.json",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgrammedArts/tslint-config-programmedarts.git"
+  },
+  "keywords": [
+    "tslint"
+  ],
+  "author": "François Nguyen <https://github.com/phurytw>, Aaron Dosser <https://github.com/detri>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProgrammedArts/tslint-config-programmedarts/issues"
+  },
+  "homepage": "https://github.com/ProgrammedArts/tslint-config-programmedarts#readme",
+  "dependencies": {
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0"
+  }
+}
