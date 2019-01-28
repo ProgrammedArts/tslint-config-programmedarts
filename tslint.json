@@ -3,16 +3,23 @@
     "tslint:latest",
     "tslint-react",
     "tslint-eslint-rules",
-    "tslint-config-prettier"
+    "tslint-config-prettier",
+    "tslint-config-airbnb"
   ],
   "rules": {
-    "no-console": [true, "log"],
-    "quotemark": [
+    // allow pascal case for components
+    "variable-name": [
       true,
-      "single",
-      "jsx-double",
-      "avoid-escape",
-      "avoid-template"
-    ]
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    // allow import React from 'react'
+    "import-name": [true, { "react": "React" }, { "reactDom": "ReactDOM" }],
+    // allow dev dependencies in tests and stories
+    "no-implicit-dependencies": [true, "dev"],
+    // allow omitting I for external libs interfaces
+    "interface-name": [true, "never-prefix"]
   }
 }
